@@ -1,0 +1,129 @@
+
+.active i{
+  color:rgba(13, 245, 13, 0.918);
+}
+
+
+
+.form{
+  outline: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ flex-direction: column;
+margin-left:25%;
+margin-right:25%;
+margin-top:10%;
+position: relative;
+height: 250px;
+
+}
+.addingList{
+  margin:13px;
+  width:35%;
+  background-color: white;
+  outline:none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding:7px;
+  
+  font-size: 1.3rem;
+}
+.form .add{
+  background-color: blueviolet;
+  color:white;
+  font-weight: bold;
+
+}
+
+.form .add:hover{
+  background-color: rgb(102, 50, 151);
+}
+
+
+.Todo_item{
+
+ display:flex;
+ flex-direction: row;
+height:50px;
+position: relative;
+margin-top:20px;
+margin-left:10px;
+margin-right:10px;
+justify-content: space-between;
+background-color: rgb(102, 50, 151);
+border-radius: 5px;
+color:white;
+font-size:10px;
+align-items: center;
+padding-left:10px;
+}
+
+.Todo_item .todo{
+  
+  display: flex;
+  flex-direction: row;
+  
+}
+.Todo_item .todo .tick_icon{
+padding-left:10px;
+padding-right:10px;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+  margin:0;
+  padding: 0;
+}
+ .Todo_item .trash_icon{
+  color:black;
+  font-size:large;
+ cursor: pointer;
+} 
+
+.Todo_item .tick_icon{
+ color:white;
+  font-size:large;
+ cursor: pointer;
+} 
+
+.search_here input[type=text]{
+  outline: none;
+border:1px solid black;
+height:30px;
+border-radius: 5px;
+width:100%;
+position: relative;
+
+}
+
+.todo_boxes{
+
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top:30px;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  .addingList{
+   width:80%;
+  }
+.form .add{
+   font-size:10px;
+}
+
+.Todo_item{
+display:flex;
+flex-direction: row;
+align-items: center;
+
+}
+
+
+
+
+}
